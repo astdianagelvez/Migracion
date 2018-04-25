@@ -5936,9 +5936,8 @@ PROCEDURE nombresnits
 LPARAMETERS tcTipo_doc, tcNombre, tcApellido, tcRazon_soc, tnTipo
 
 thisform.tipodoc(tcTipo_doc,tnTipo) 
-
 	
-IF ALLTRIM(lcTipo_doc) = "31" &&(LEFT(lcNit,1)="8" AND LEN(ALLTRIM(lcNit))>=9) OR (LEFT(lcNit,1)="9" AND LEN(ALLTRIM(lcNit))>=9)				
+IF ALLTRIM(lcTipo_doc) = "31" 
 		lcRazon_social = ALLTRIM(tcRazon_soc)
 		lcPrimer_nombre = ""
 		lcPrimer_apellido = ""
