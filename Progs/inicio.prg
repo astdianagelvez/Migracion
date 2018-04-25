@@ -1,0 +1,34 @@
+set sysmenu to
+application.statusbar=''
+SET SCOREBOARD OFF
+SET TALK OFF
+SET DATE BRITISH
+SET CENTURY ON
+SET BELL OFF
+SET HELP OFF
+SET SAFETY OFF
+SET DELETED ON
+SET CONFIRM OFF
+set compatible on
+SET SEPARATOR TO '.'
+SET POINT TO ','
+SET ESCAPE OFF
+SET REPROCESS TO AUTOMATIC
+* ---> REDES <---
+SET MULTILOCKS ON
+SET EXCLUSIVE OFF
+SET LOCK OFF
+set refresh to 5
+SET FUNCTION 1 TO && F1 ayuda
+*ON SHUTDOWN Do myShutDown && Salir de VFP
+ON ERROR
+ON ESCAPE
+ON PAGE
+set defa to 'c:\users\usuario\documents\visual foxpro projects\migracion' && Mi ruta (carpeta aplicación)
+bufferout=''
+SET SYSMENU off
+DO FORM "c:\users\usuario\documents\visual foxpro projects\migracion\formularios\migrar.scx"
+READ EVENTS && lo que te indica
+RELEASE ALL EXTENDED
+RETURN
+
